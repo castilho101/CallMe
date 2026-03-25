@@ -1,4 +1,4 @@
-const MARKER = "castilho";
+const MARKER = "xk7mq2bp9v";
 const CALLBACK_PARAMS = ["callback", "jsonp"];
 const CONTENT_TYPES = ["application/javascript", "text/javascript", "application/json"];
 const PROBE_TIMEOUT = 5000;
@@ -170,6 +170,7 @@ async function storeEndpoint(result) {
 async function handleRequest(details) {
   const { url, responseHeaders } = details;
 
+  if (url.startsWith("chrome-extension://")) return;
   if (!hasRelevantContentType(responseHeaders)) return;
 
   const baseUrl = getBaseUrl(url);

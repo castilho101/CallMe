@@ -28,7 +28,7 @@
     font-weight: 600;
     color: #e53935;
   }
-  header .actions { display: flex; gap: 6px; }
+  header .actions { display: flex; gap: 8px; align-items: center; }
   button {
     background: #333;
     color: #ccc;
@@ -41,6 +41,29 @@
   button:hover { background: #444; color: #fff; }
   button.danger { color: #e53935; }
   button.danger:hover { background: #e53935; color: #fff; }
+  .separator {
+    width: 1px;
+    height: 18px;
+    background: #3a3a3a;
+  }
+  #contribute {
+    background: #141414;
+    color: #4caf50;
+    border: 1px solid #2e7d3244;
+    font-weight: 700;
+    font-size: 10px;
+    letter-spacing: 0.5px;
+    padding: 3px 8px;
+    border-radius: 3px;
+    transition: all 0.2s;
+    text-transform: uppercase;
+  }
+  #contribute:hover {
+    background: #1b5e20;
+    color: #e8f5e9;
+    border-color: #4caf50;
+    box-shadow: 0 0 6px rgba(76, 175, 80, 0.3);
+  }
   #status {
     padding: 4px 14px;
     font-size: 11px;
@@ -119,6 +142,8 @@
   <header>
     <h1>CallMe</h1>
     <div class="actions">
+      <button id="contribute"><svg width="10" height="11" viewBox="0 0 16 18" fill="none" style="vertical-align:-1px;margin-right:4px"><path d="M8 0L15 3V8C15 12.4 12 16.1 8 17.5C4 16.1 1 12.4 1 8V3L8 0Z" fill="currentColor"/></svg>cspbypass.com</button>
+      <div class="separator"></div>
       <button id="export">Export</button>
       <button id="clear" class="danger">Clear</button>
     </div>
