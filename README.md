@@ -16,7 +16,7 @@ CallMe monitors web requests in the background, tests endpoints for JSONP callba
 
 ## CSPBypass Contribution
 
-CallMe integrates with [cspbypass.com](https://cspbypass.com) — a curated database of CSP bypass gadgets. The **cspbypass.com** button in the popup formats your discoveries into the right format for direct contribution to the project. It automatically filters findings against domains commonly found in real-world CSP headers and removes duplicates already present in the CSPBypass dataset.
+CallMe integrates with [cspbypass.com](https://cspbypass.com). The **cspbypass.com** button in the popup formats your discoveries into the right format for direct contribution to the project. It automatically filters findings against domains commonly found in real-world CSP headers and removes duplicates already present in the CSPBypass dataset.
 
 > **Warning:** Always test your endpoints and verify they actually trigger an alert before submitting. Do not contribute untested or broken gadgets.
 
