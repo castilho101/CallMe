@@ -5,24 +5,12 @@ const PROBE_TIMEOUT = 5000;
 
 const testedUrls = new Set();
 
-// Generate red square icon programmatically
-function generateIcon() {
-  const size = 16;
-  const canvas = new OffscreenCanvas(size, size);
-  const ctx = canvas.getContext("2d");
-  ctx.fillStyle = "#e53935";
-  ctx.fillRect(0, 0, size, size);
-  return ctx.getImageData(0, 0, size, size);
-}
-
-// Set extension icon on install/startup
+// Update badge on install/startup
 chrome.runtime.onInstalled.addListener(() => {
-  chrome.action.setIcon({ imageData: generateIcon() });
   updateBadge();
 });
 
 chrome.runtime.onStartup.addListener(() => {
-  chrome.action.setIcon({ imageData: generateIcon() });
   updateBadge();
 });
 
