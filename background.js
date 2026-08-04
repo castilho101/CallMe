@@ -1,5 +1,27 @@
 const MARKER = "xk7mq2bp9v";
-const CALLBACK_PARAMS = ["callback", "jsonp"];
+const CALLBACK_PARAMS = [
+  "callback",
+  "cb",
+  "jsonp",
+  "jsoncallback",
+  "jsonpcallback",
+  "jsonpCallback",
+  "callback_func",
+  "callback_fn",
+  "func",
+  "function",
+  "handler",
+  "jsonp_handler",
+  "jsonp_cb",
+  "jsonpcb",
+  "cbfn",
+  "jcb",
+  "call",
+  "j",
+  "onload",
+  "oncomplete",
+  "__e2e_action_id"
+];
 const CONTENT_TYPES = ["application/javascript", "text/javascript", "application/json"];
 const PROBE_TIMEOUT = 5000;
 
