@@ -1,0 +1,42 @@
+{
+  "manifest_version": 2,
+  "name": "CallMe",
+  "version": "1.0",
+  "description": "Passively discovers JSONP callback endpoints while browsing.",
+  "browser_specific_settings": {
+    "gecko": {
+      "id": "callme@cspbypass.com",
+      "strict_min_version": "109.0",
+      "data_collection_permissions": {
+        "required": [
+          "none"
+        ]
+      }
+    }
+  },
+  "permissions": [
+    "webRequest",
+    "webRequestBlocking",
+    "storage",
+    "<all_urls>"
+  ],
+  "background": {
+    "scripts": [
+      "background.js"
+    ]
+  },
+  "browser_action": {
+    "default_popup": "popup.html",
+    "default_title": "CallMe - JSONP Discovery",
+    "default_icon": {
+      "16": "icon-16.png",
+      "48": "icon-48.png",
+      "128": "icon-128.png"
+    }
+  },
+  "icons": {
+    "16": "icon-16.png",
+    "48": "icon-48.png",
+    "128": "icon-128.png"
+  }
+}
